@@ -8,9 +8,10 @@
     <ul id="dog-list"></ul>
     <div id="dog">
 
-        <h2 id="dog-name"></h2>
-        <div id="dog-count"></div>
-        <img id="dog-img" src="" alt="cute dog">
+        <h2 data-bind="text: name"></h2>
+        <div data-bind="text: clickCount"></div>
+        <img src="" alt="cute dog" data-bind="click: incrementCounter,
+        attr: {src: imgSrc}">
 
     </div>
     <script src="js/lib/knockout-3.2.0.js"></script>
